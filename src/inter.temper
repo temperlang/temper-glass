@@ -1,0 +1,57 @@
+
+export class Loader<Arg, Ret> {
+  public load(s: String): fn(Arg): Ret;
+}
+
+export class Box {
+  public var loader: Loader | Null;
+
+  public set impl(value: Loader): Void {
+    loader = value;
+    ready();
+  }
+}
+
+export class Typed<Arg, Ret> {
+  public var internal: fn(Arg): Ret;
+
+  public constructor(s: String): Void | Bubble {
+    let self = this;
+    
+    let more(): Void {
+      let impl = box.loader;
+      match (impl) {
+        null -> onReadys[0].add(more);
+        is Loader<Arg, Ret> -> self.internal = impl.load(s);
+        else -> bubble();
+      }
+    }
+
+    more();
+  }
+
+  public get func(): fn(Arg): Ret {
+    let self = this;
+    return fn(arg: Arg): Ret {
+      return self.internal(arg);
+    }
+  }
+
+  public call(v: Arg): Ret {
+    return internal(v);
+  }
+}
+
+export var box: Box = new Box(null);
+export var onReadys = [
+  new ListBuilder<fn(): Void>(),
+  new ListBuilder<fn(): Void>(),
+];
+export let ready(): Void {
+  for (var i = 0; i < onReadys.length; i++) {
+    let onReady = onReadys[i];
+    while (!onReady.isEmpty) {
+      onReady.removeLast()();
+    }
+  }
+}

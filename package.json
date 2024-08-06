@@ -1,0 +1,13 @@
+{
+  "name": "temper-html",
+  "version": "1.0.0",
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@temperlang/core": "file:temper.out/js/temper-core",
+    "rollup": "^4.20.0"
+  },
+  "scripts": {
+    "rollup": "npx rollup -w -c rollup.config.js"
+  },
+  "type": "module"
+}

@@ -1,0 +1,49 @@
+
+let {...} = import("./inter.temper");
+
+let Block = fn(): Void;
+
+let stack = new ListBuilder<BaseElement>();
+
+let vMake = new Typed<String, BaseElement>("return document.createElement(arg);");
+let vDocument = new Typed<Null, BaseElement>("return document;");
+let vBody = new Typed<Null, BaseElement>("return document.body;");
+let vElementAppend = new Typed<Listed<BaseElement>, Null>("arg[0].append(arg[1]);");
+let vElementAddText = new Typed<Listed<BaseElement | String>, Null>("arg[0].innerText += arg[1];");
+var self: BaseElement;
+
+let make(element: String): BaseElement {
+  return vMake.call(element);
+}
+
+class BaseElement {}
+
+export let with(element: BaseElement, block: Block): Void {
+  self = element;
+  stack.add(element);
+  let ret = block();
+  stack.removeLast();
+  if (!stack.isEmpty) {
+    self = stack[stack.length-1];
+  }
+}
+
+export let app(block: Block): Void {
+  onReadys[1].add {
+    with (vBody.call(null)) {
+      block();
+    }
+  }
+}
+
+export let child(type: String, block: Block): Void {
+  let elem = make(type);
+  vElementAppend.call([self, elem]);
+  with (elem) {
+    block();
+  }
+}
+
+export let text(s: String): Void {
+  vElementAddText.call([self, s]);
+}
