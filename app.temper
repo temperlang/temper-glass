@@ -1,0 +1,25 @@
+
+let {...} = import("./glass/core.temper");
+
+let flex = later {
+  style("display", "flex")
+}
+
+app {
+  style("font-family", "sans-serif")
+  style("align", "center")
+
+  child("h1") {
+    text("My Cool Website")
+  }
+  child("h2") {
+    text("Lorem Epsom")
+  }
+  child("ul") {
+    repeat(6) { (x);;
+      child("li") {
+        text("List part ${x.toString()}")
+      }
+    }
+  }
+}

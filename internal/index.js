@@ -1,5 +1,5 @@
 
-import { Loader, box, ready } from '../temper.out/js/temper-html/inter.js';
+import { Loader, box, ready } from '../temper.out/js/temper-html/internal/js.js';
 import '../temper.out/js/temper-html/app.js';
 
 box.impl = new class extends Loader {

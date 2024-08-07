@@ -1,4 +1,4 @@
 package-lock.json
 temper.out
-out/chunks
+out/index.js
 node_modules

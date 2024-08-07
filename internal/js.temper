@@ -13,16 +13,16 @@ export class Box {
 }
 
 export class Typed<Arg, Ret> {
-  public var internal: fn(Arg): Ret;
+  public var func: fn(Arg): Ret;
 
   public constructor(s: String): Void | Bubble {
-    let self = this;
+    let obj = this;
     
     let more(): Void {
       let impl = box.loader;
       match (impl) {
         null -> onReadys[0].add(more);
-        is Loader<Arg, Ret> -> self.internal = impl.load(s);
+        is Loader<Arg, Ret> -> obj.func = impl.load(s);
         else -> bubble();
       }
     }
@@ -30,15 +30,8 @@ export class Typed<Arg, Ret> {
     more();
   }
 
-  public get func(): fn(Arg): Ret {
-    let self = this;
-    return fn(arg: Arg): Ret {
-      return self.internal(arg);
-    }
-  }
-
   public call(v: Arg): Ret {
-    return internal(v);
+    return func(v);
   }
 }
 

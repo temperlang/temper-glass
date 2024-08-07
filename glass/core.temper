@@ -1,5 +1,5 @@
 
-let {...} = import("./inter.temper");
+let {...} = import("../internal/js.temper");
 
 let Block = fn(): Void;
 
@@ -10,6 +10,7 @@ let vDocument = new Typed<Null, BaseElement>("return document;");
 let vBody = new Typed<Null, BaseElement>("return document.body;");
 let vElementAppend = new Typed<Listed<BaseElement>, Null>("arg[0].append(arg[1]);");
 let vElementAddText = new Typed<Listed<BaseElement | String>, Null>("arg[0].innerText += arg[1];");
+let vElementAddStyle = new Typed<Listed<BaseElement | String>, Null>("arg[0].style[arg[1]] = arg[2];");
 var self: BaseElement;
 
 let make(element: String): BaseElement {
@@ -46,4 +47,18 @@ export let child(type: String, block: Block): Void {
 
 export let text(s: String): Void {
   vElementAddText.call([self, s]);
+}
+
+export let style(prop: String, value: String): Void {
+  vElementAddStyle.call([self, prop, value]);
+}
+
+export let later(block: Block): Block {
+  return block;
+}
+
+export let repeat(n: Int, block: fn(Int): Void): Void {
+  for (var i = 0; i < n; i++) {
+    block(i);
+  }
 }

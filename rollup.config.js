@@ -1,10 +1,11 @@
 
 import { nodeResolve } from "@rollup/plugin-node-resolve";
+import { autoReload } from "rollup-plugin-auto-reload"
 
 export default {
-    input: 'src/index.js',
+    input: 'internal/index.js',
     output: {
-        dir: 'out/chunks',
+        file: 'out/index.js',
     },
     plugins: [
         nodeResolve({
@@ -12,6 +13,9 @@ export default {
             jsnext: true,
             browser: true,
             preferBuiltins: true
+        }),
+        autoReload({
+            
         }),
     ],
 };
