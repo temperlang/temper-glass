@@ -1,25 +1,90 @@
 
 let {...} = import("./glass/core.temper");
+let {...} = import("./glass/util.temper");
 
-let flex = later {
-  style("display", "flex")
+let full(): Void {
+  setStyle("display", "block")
+  setStyle("position", "absolute")
+  setStyle("top", "0")
+  setStyle("bottom", "0")
+  setStyle("left", "0")
+  setStyle("right", "0")
+}
+
+let box(block: Block): Void {
+  div {
+    setStyle("box-sixing", "border-box")
+    setStyle("flex", "1")
+    block()
+  }
+}
+
+let horizontal(block: Block): Void {
+  box {
+    setStyle("display", "flex")
+    setStyle("flex-direction", "row")
+    setStyle("height", "100%")
+    setStyle("width", "100%")
+    block()
+  }
+}
+
+let vertical(block: Block): Void {
+  box {
+    setStyle("display", "flex")
+    setStyle("flex-direction", "column")
+    setStyle("width", "100%")
+    setStyle("height", "100%")
+    block()
+  }
 }
 
 app {
-  style("font-family", "sans-serif")
-  style("align", "center")
+  html {
+    full()
+  }
 
-  child("h1") {
-    text("My Cool Website")
+  body {
+    full()
+    style["margin"] = "1em";
+    style["font-family"] = "sans-serif";
+    style["align"] = "center";
   }
-  child("h2") {
-    text("Lorem Epsom")
+  
+  h1 {
+    text("Test app for Glass")
   }
-  child("ul") {
-    repeat(6) { (x);;
-      child("li") {
-        text("List part ${x.toString()}")
+
+  ul {
+    for (var x = 0; x < 5; x++) {
+      li {
+        var enabled = true;
+
+        let update = call {
+          style.color = enabled ? "green" : "red";
+        }
+
+        h3 {
+          style.userSelect = "none";
+          style.cursor = "pointer";
+
+          text("Element ${(x+1).toString()}")
+        }
+        
+        on("click") {
+          enabled = !enabled;
+          update()
+        }
       }
+    }
+  }
+
+  horizontal {
+    box {
+      style.background = "#153";
+    }
+    box {
+      style.background = "#512";
     }
   }
 }

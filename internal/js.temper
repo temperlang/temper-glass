@@ -21,7 +21,7 @@ export class Typed<Arg, Ret> {
     let more(): Void {
       let impl = box.loader;
       match (impl) {
-        null -> onReadys[0].add(more);
+        null -> onReady.add(more);
         is Loader<Arg, Ret> -> obj.func = impl.load(s);
         else -> bubble();
       }
@@ -36,15 +36,14 @@ export class Typed<Arg, Ret> {
 }
 
 export var box: Box = new Box(null);
-export var onReadys = [
-  new ListBuilder<fn(): Void>(),
-  new ListBuilder<fn(): Void>(),
-];
+export var onReady = new ListBuilder<fn(): Void>();
+export var onReadyApp = new ListBuilder<fn(): Void>();
+
 export let ready(): Void {
-  for (var i = 0; i < onReadys.length; i++) {
-    let onReady = onReadys[i];
-    while (!onReady.isEmpty) {
-      onReady.removeLast()();
-    }
+  while (!onReady.isEmpty) {
+    onReady.removeLast()();
+  }
+  while (!onReadyApp.isEmpty) {
+    onReadyApp.removeLast()();
   }
 }

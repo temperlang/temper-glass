@@ -1,0 +1,111 @@
+
+let {...} = import("./core.temper");
+let {...} = import("./style.temper");
+
+export let style = new WrapStyle();
+
+let elem(elem: String): fn(Block): Void {
+  return fn(block: Block): Void {
+    child(elem) {
+      block();
+    }
+  }
+}
+
+export let h1 = elem("h1");
+export let h2 = elem("h2");
+export let h3 = elem("h3");
+export let h4 = elem("h4");
+export let h5 = elem("h5");
+export let h6 = elem("h6");
+export let p = elem("p");
+export let a = elem("a");
+export let abbr = elem("abbr");
+export let address = elem("address");
+export let area = elem("area");
+export let article = elem("article");
+export let aside = elem("aside");
+export let audio = elem("audio");
+export let b = elem("b");
+export let background = elem("background");
+export let base = elem("base");
+export let bdi = elem("bdi");
+export let bdo = elem("bdo");
+export let blockquote = elem("blockquote");
+export let br = elem("br");
+export let button = elem("button");
+export let canvas = elem("canvas");
+export let caption = elem("caption");
+export let cite = elem("cite");
+export let code = elem("code");
+export let col = elem("col");
+export let colgroup = elem("colgroup");
+export let data = elem("data");
+export let datalist = elem("datalist");
+export let dd = elem("dd");
+export let del = elem("del");
+export let details = elem("details");
+export let dfn = elem("dfn");
+export let dialog = elem("dialog");
+export let div = elem("div");
+export let dl = elem("dl");
+export let dt = elem("dt");
+export let em = elem("em");
+export let embed = elem("embed");
+export let fieldset = elem("fieldset");
+export let figcaption = elem("figcaption");
+export let figure = elem("figure");
+export let footer = elem("footer");
+export let form = elem("form");
+export let header = elem("header");
+export let hgroup = elem("hgroup");
+export let hr = elem("hr");
+export let i = elem("i");
+export let iframe = elem("iframe");
+export let img = elem("img");
+export let input = elem("input");
+export let ins = elem("ins");
+export let kbd = elem("kbd");
+export let li = elem("li");
+export let link = elem("link");
+export let main = elem("main");
+export let map = elem("map");
+export let mark = elem("mark");
+export let menu = elem("menu");
+export let meta = elem("meta");
+export let meter = elem("meter");
+export let nav = elem("nav");
+export let noscript = elem("noscript");
+export let object = elem("object");
+export let ol = elem("ol");
+export let optgroup = elem("optgroup");
+export let option = elem("option");
+export let output = elem("output");
+export let pre = elem("pre");
+export let s = elem("s");
+export let samp = elem("samp");
+export let search = elem("search");
+export let section = elem("section");
+export let slot = elem("slot");
+export let small = elem("small");
+export let source = elem("source");
+export let span = elem("span");
+export let strong = elem("strong");
+export let sub = elem("sub");
+export let summary = elem("summary");
+export let sup = elem("sup");
+export let table = elem("table");
+export let tbody = elem("tbody");
+export let td = elem("td");
+export let textarea = elem("textarea");
+export let tfoot = elem("tfoot");
+export let th = elem("th");
+export let thead = elem("thead");
+export let time = elem("time");
+export let title = elem("title");
+export let tr = elem("tr");
+export let track = elem("track");
+export let u = elem("u");
+export let ul = elem("ul");
+export let video = elem("video");
+export let wbr = elem("wbr");

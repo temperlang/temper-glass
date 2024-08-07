@@ -1,0 +1,3622 @@
+
+let {...} = import("./core.temper");
+
+export class WrapStyle {
+    public set(name: String, value: String): String {
+        setStyle(name, value);
+        return value;
+    }
+
+    public get(name: String): String {
+        return getStyle(name);
+    }
+    
+    public get alignContent(): String {
+        return getStyle("align-content");
+    }
+
+    public set alignContent(v: String): String {
+        setStyle("align-content", v);
+        return v;
+    }
+    
+    public get alignItems(): String {
+        return getStyle("align-items");
+    }
+
+    public set alignItems(v: String): String {
+        setStyle("align-items", v);
+        return v;
+    }
+    
+    public get alignSelf(): String {
+        return getStyle("align-self");
+    }
+
+    public set alignSelf(v: String): String {
+        setStyle("align-self", v);
+        return v;
+    }
+    
+    public get alignmentAdjust(): String {
+        return getStyle("alignment-adjust");
+    }
+
+    public set alignmentAdjust(v: String): String {
+        setStyle("alignment-adjust", v);
+        return v;
+    }
+    
+    public get alignmentBaseline(): String {
+        return getStyle("alignment-baseline");
+    }
+
+    public set alignmentBaseline(v: String): String {
+        setStyle("alignment-baseline", v);
+        return v;
+    }
+    
+    public get all(): String {
+        return getStyle("all");
+    }
+
+    public set all(v: String): String {
+        setStyle("all", v);
+        return v;
+    }
+    
+    public get alt(): String {
+        return getStyle("alt");
+    }
+
+    public set alt(v: String): String {
+        setStyle("alt", v);
+        return v;
+    }
+    
+    public get animation(): String {
+        return getStyle("animation");
+    }
+
+    public set animation(v: String): String {
+        setStyle("animation", v);
+        return v;
+    }
+    
+    public get animationDelay(): String {
+        return getStyle("animation-delay");
+    }
+
+    public set animationDelay(v: String): String {
+        setStyle("animation-delay", v);
+        return v;
+    }
+    
+    public get animationDirection(): String {
+        return getStyle("animation-direction");
+    }
+
+    public set animationDirection(v: String): String {
+        setStyle("animation-direction", v);
+        return v;
+    }
+    
+    public get animationDuration(): String {
+        return getStyle("animation-duration");
+    }
+
+    public set animationDuration(v: String): String {
+        setStyle("animation-duration", v);
+        return v;
+    }
+    
+    public get animationFillMode(): String {
+        return getStyle("animation-fill-mode");
+    }
+
+    public set animationFillMode(v: String): String {
+        setStyle("animation-fill-mode", v);
+        return v;
+    }
+    
+    public get animationIterationCount(): String {
+        return getStyle("animation-iteration-count");
+    }
+
+    public set animationIterationCount(v: String): String {
+        setStyle("animation-iteration-count", v);
+        return v;
+    }
+    
+    public get animationName(): String {
+        return getStyle("animation-name");
+    }
+
+    public set animationName(v: String): String {
+        setStyle("animation-name", v);
+        return v;
+    }
+    
+    public get animationPlayState(): String {
+        return getStyle("animation-play-state");
+    }
+
+    public set animationPlayState(v: String): String {
+        setStyle("animation-play-state", v);
+        return v;
+    }
+    
+    public get animationTimingFunction(): String {
+        return getStyle("animation-timing-function");
+    }
+
+    public set animationTimingFunction(v: String): String {
+        setStyle("animation-timing-function", v);
+        return v;
+    }
+    
+    public get azimuth(): String {
+        return getStyle("azimuth");
+    }
+
+    public set azimuth(v: String): String {
+        setStyle("azimuth", v);
+        return v;
+    }
+    
+    public get backfaceVisibility(): String {
+        return getStyle("backface-visibility");
+    }
+
+    public set backfaceVisibility(v: String): String {
+        setStyle("backface-visibility", v);
+        return v;
+    }
+    
+    public get background(): String {
+        return getStyle("background");
+    }
+
+    public set background(v: String): String {
+        setStyle("background", v);
+        return v;
+    }
+    
+    public get backgroundAttachment(): String {
+        return getStyle("background-attachment");
+    }
+
+    public set backgroundAttachment(v: String): String {
+        setStyle("background-attachment", v);
+        return v;
+    }
+    
+    public get backgroundBlendMode(): String {
+        return getStyle("background-blend-mode");
+    }
+
+    public set backgroundBlendMode(v: String): String {
+        setStyle("background-blend-mode", v);
+        return v;
+    }
+    
+    public get backgroundClip(): String {
+        return getStyle("background-clip");
+    }
+
+    public set backgroundClip(v: String): String {
+        setStyle("background-clip", v);
+        return v;
+    }
+    
+    public get backgroundColor(): String {
+        return getStyle("background-color");
+    }
+
+    public set backgroundColor(v: String): String {
+        setStyle("background-color", v);
+        return v;
+    }
+    
+    public get backgroundImage(): String {
+        return getStyle("background-image");
+    }
+
+    public set backgroundImage(v: String): String {
+        setStyle("background-image", v);
+        return v;
+    }
+    
+    public get backgroundOrigin(): String {
+        return getStyle("background-origin");
+    }
+
+    public set backgroundOrigin(v: String): String {
+        setStyle("background-origin", v);
+        return v;
+    }
+    
+    public get backgroundPosition(): String {
+        return getStyle("background-position");
+    }
+
+    public set backgroundPosition(v: String): String {
+        setStyle("background-position", v);
+        return v;
+    }
+    
+    public get backgroundRepeat(): String {
+        return getStyle("background-repeat");
+    }
+
+    public set backgroundRepeat(v: String): String {
+        setStyle("background-repeat", v);
+        return v;
+    }
+    
+    public get backgroundSize(): String {
+        return getStyle("background-size");
+    }
+
+    public set backgroundSize(v: String): String {
+        setStyle("background-size", v);
+        return v;
+    }
+    
+    public get baselineShift(): String {
+        return getStyle("baseline-shift");
+    }
+
+    public set baselineShift(v: String): String {
+        setStyle("baseline-shift", v);
+        return v;
+    }
+    
+    public get bleed(): String {
+        return getStyle("bleed");
+    }
+
+    public set bleed(v: String): String {
+        setStyle("bleed", v);
+        return v;
+    }
+    
+    public get bookmarkLabel(): String {
+        return getStyle("bookmark-label");
+    }
+
+    public set bookmarkLabel(v: String): String {
+        setStyle("bookmark-label", v);
+        return v;
+    }
+    
+    public get bookmarkLevel(): String {
+        return getStyle("bookmark-level");
+    }
+
+    public set bookmarkLevel(v: String): String {
+        setStyle("bookmark-level", v);
+        return v;
+    }
+    
+    public get bookmarkState(): String {
+        return getStyle("bookmark-state");
+    }
+
+    public set bookmarkState(v: String): String {
+        setStyle("bookmark-state", v);
+        return v;
+    }
+    
+    public get border(): String {
+        return getStyle("border");
+    }
+
+    public set border(v: String): String {
+        setStyle("border", v);
+        return v;
+    }
+    
+    public get borderBottom(): String {
+        return getStyle("border-bottom");
+    }
+
+    public set borderBottom(v: String): String {
+        setStyle("border-bottom", v);
+        return v;
+    }
+    
+    public get borderBottomColor(): String {
+        return getStyle("border-bottom-color");
+    }
+
+    public set borderBottomColor(v: String): String {
+        setStyle("border-bottom-color", v);
+        return v;
+    }
+    
+    public get borderBottomLeftRadius(): String {
+        return getStyle("border-bottom-left-radius");
+    }
+
+    public set borderBottomLeftRadius(v: String): String {
+        setStyle("border-bottom-left-radius", v);
+        return v;
+    }
+    
+    public get borderBottomRightRadius(): String {
+        return getStyle("border-bottom-right-radius");
+    }
+
+    public set borderBottomRightRadius(v: String): String {
+        setStyle("border-bottom-right-radius", v);
+        return v;
+    }
+    
+    public get borderBottomStyle(): String {
+        return getStyle("border-bottom-style");
+    }
+
+    public set borderBottomStyle(v: String): String {
+        setStyle("border-bottom-style", v);
+        return v;
+    }
+    
+    public get borderBottomWidth(): String {
+        return getStyle("border-bottom-width");
+    }
+
+    public set borderBottomWidth(v: String): String {
+        setStyle("border-bottom-width", v);
+        return v;
+    }
+    
+    public get borderCollapse(): String {
+        return getStyle("border-collapse");
+    }
+
+    public set borderCollapse(v: String): String {
+        setStyle("border-collapse", v);
+        return v;
+    }
+    
+    public get borderColor(): String {
+        return getStyle("border-color");
+    }
+
+    public set borderColor(v: String): String {
+        setStyle("border-color", v);
+        return v;
+    }
+    
+    public get borderImage(): String {
+        return getStyle("border-image");
+    }
+
+    public set borderImage(v: String): String {
+        setStyle("border-image", v);
+        return v;
+    }
+    
+    public get borderImageOutset(): String {
+        return getStyle("border-image-outset");
+    }
+
+    public set borderImageOutset(v: String): String {
+        setStyle("border-image-outset", v);
+        return v;
+    }
+    
+    public get borderImageRepeat(): String {
+        return getStyle("border-image-repeat");
+    }
+
+    public set borderImageRepeat(v: String): String {
+        setStyle("border-image-repeat", v);
+        return v;
+    }
+    
+    public get borderImageSlice(): String {
+        return getStyle("border-image-slice");
+    }
+
+    public set borderImageSlice(v: String): String {
+        setStyle("border-image-slice", v);
+        return v;
+    }
+    
+    public get borderImageSource(): String {
+        return getStyle("border-image-source");
+    }
+
+    public set borderImageSource(v: String): String {
+        setStyle("border-image-source", v);
+        return v;
+    }
+    
+    public get borderImageWidth(): String {
+        return getStyle("border-image-width");
+    }
+
+    public set borderImageWidth(v: String): String {
+        setStyle("border-image-width", v);
+        return v;
+    }
+    
+    public get borderLeft(): String {
+        return getStyle("border-left");
+    }
+
+    public set borderLeft(v: String): String {
+        setStyle("border-left", v);
+        return v;
+    }
+    
+    public get borderLeftColor(): String {
+        return getStyle("border-left-color");
+    }
+
+    public set borderLeftColor(v: String): String {
+        setStyle("border-left-color", v);
+        return v;
+    }
+    
+    public get borderLeftStyle(): String {
+        return getStyle("border-left-style");
+    }
+
+    public set borderLeftStyle(v: String): String {
+        setStyle("border-left-style", v);
+        return v;
+    }
+    
+    public get borderLeftWidth(): String {
+        return getStyle("border-left-width");
+    }
+
+    public set borderLeftWidth(v: String): String {
+        setStyle("border-left-width", v);
+        return v;
+    }
+    
+    public get borderRadius(): String {
+        return getStyle("border-radius");
+    }
+
+    public set borderRadius(v: String): String {
+        setStyle("border-radius", v);
+        return v;
+    }
+    
+    public get borderRight(): String {
+        return getStyle("border-right");
+    }
+
+    public set borderRight(v: String): String {
+        setStyle("border-right", v);
+        return v;
+    }
+    
+    public get borderRightColor(): String {
+        return getStyle("border-right-color");
+    }
+
+    public set borderRightColor(v: String): String {
+        setStyle("border-right-color", v);
+        return v;
+    }
+    
+    public get borderRightStyle(): String {
+        return getStyle("border-right-style");
+    }
+
+    public set borderRightStyle(v: String): String {
+        setStyle("border-right-style", v);
+        return v;
+    }
+    
+    public get borderRightWidth(): String {
+        return getStyle("border-right-width");
+    }
+
+    public set borderRightWidth(v: String): String {
+        setStyle("border-right-width", v);
+        return v;
+    }
+    
+    public get borderSpacing(): String {
+        return getStyle("border-spacing");
+    }
+
+    public set borderSpacing(v: String): String {
+        setStyle("border-spacing", v);
+        return v;
+    }
+    
+    public get borderStyle(): String {
+        return getStyle("border-style");
+    }
+
+    public set borderStyle(v: String): String {
+        setStyle("border-style", v);
+        return v;
+    }
+    
+    public get borderTop(): String {
+        return getStyle("border-top");
+    }
+
+    public set borderTop(v: String): String {
+        setStyle("border-top", v);
+        return v;
+    }
+    
+    public get borderTopColor(): String {
+        return getStyle("border-top-color");
+    }
+
+    public set borderTopColor(v: String): String {
+        setStyle("border-top-color", v);
+        return v;
+    }
+    
+    public get borderTopLeftRadius(): String {
+        return getStyle("border-top-left-radius");
+    }
+
+    public set borderTopLeftRadius(v: String): String {
+        setStyle("border-top-left-radius", v);
+        return v;
+    }
+    
+    public get borderTopRightRadius(): String {
+        return getStyle("border-top-right-radius");
+    }
+
+    public set borderTopRightRadius(v: String): String {
+        setStyle("border-top-right-radius", v);
+        return v;
+    }
+    
+    public get borderTopStyle(): String {
+        return getStyle("border-top-style");
+    }
+
+    public set borderTopStyle(v: String): String {
+        setStyle("border-top-style", v);
+        return v;
+    }
+    
+    public get borderTopWidth(): String {
+        return getStyle("border-top-width");
+    }
+
+    public set borderTopWidth(v: String): String {
+        setStyle("border-top-width", v);
+        return v;
+    }
+    
+    public get borderWidth(): String {
+        return getStyle("border-width");
+    }
+
+    public set borderWidth(v: String): String {
+        setStyle("border-width", v);
+        return v;
+    }
+    
+    public get bottom(): String {
+        return getStyle("bottom");
+    }
+
+    public set bottom(v: String): String {
+        setStyle("bottom", v);
+        return v;
+    }
+    
+    public get boxDecorationBreak(): String {
+        return getStyle("box-decoration-break");
+    }
+
+    public set boxDecorationBreak(v: String): String {
+        setStyle("box-decoration-break", v);
+        return v;
+    }
+    
+    public get boxShadow(): String {
+        return getStyle("box-shadow");
+    }
+
+    public set boxShadow(v: String): String {
+        setStyle("box-shadow", v);
+        return v;
+    }
+    
+    public get boxSizing(): String {
+        return getStyle("box-sizing");
+    }
+
+    public set boxSizing(v: String): String {
+        setStyle("box-sizing", v);
+        return v;
+    }
+    
+    public get boxSnap(): String {
+        return getStyle("box-snap");
+    }
+
+    public set boxSnap(v: String): String {
+        setStyle("box-snap", v);
+        return v;
+    }
+    
+    public get breakAfter(): String {
+        return getStyle("break-after");
+    }
+
+    public set breakAfter(v: String): String {
+        setStyle("break-after", v);
+        return v;
+    }
+    
+    public get breakBefore(): String {
+        return getStyle("break-before");
+    }
+
+    public set breakBefore(v: String): String {
+        setStyle("break-before", v);
+        return v;
+    }
+    
+    public get breakInside(): String {
+        return getStyle("break-inside");
+    }
+
+    public set breakInside(v: String): String {
+        setStyle("break-inside", v);
+        return v;
+    }
+    
+    public get bufferedRendering(): String {
+        return getStyle("buffered-rendering");
+    }
+
+    public set bufferedRendering(v: String): String {
+        setStyle("buffered-rendering", v);
+        return v;
+    }
+    
+    public get captionSide(): String {
+        return getStyle("caption-side");
+    }
+
+    public set captionSide(v: String): String {
+        setStyle("caption-side", v);
+        return v;
+    }
+    
+    public get clear(): String {
+        return getStyle("clear");
+    }
+
+    public set clear(v: String): String {
+        setStyle("clear", v);
+        return v;
+    }
+    
+    public get clearSide(): String {
+        return getStyle("clear-side");
+    }
+
+    public set clearSide(v: String): String {
+        setStyle("clear-side", v);
+        return v;
+    }
+    
+    public get clip(): String {
+        return getStyle("clip");
+    }
+
+    public set clip(v: String): String {
+        setStyle("clip", v);
+        return v;
+    }
+    
+    public get clipPath(): String {
+        return getStyle("clip-path");
+    }
+
+    public set clipPath(v: String): String {
+        setStyle("clip-path", v);
+        return v;
+    }
+    
+    public get clipRule(): String {
+        return getStyle("clip-rule");
+    }
+
+    public set clipRule(v: String): String {
+        setStyle("clip-rule", v);
+        return v;
+    }
+    
+    public get color(): String {
+        return getStyle("color");
+    }
+
+    public set color(v: String): String {
+        setStyle("color", v);
+        return v;
+    }
+    
+    public get colorAdjust(): String {
+        return getStyle("color-adjust");
+    }
+
+    public set colorAdjust(v: String): String {
+        setStyle("color-adjust", v);
+        return v;
+    }
+    
+    public get colorCorrection(): String {
+        return getStyle("color-correction");
+    }
+
+    public set colorCorrection(v: String): String {
+        setStyle("color-correction", v);
+        return v;
+    }
+    
+    public get colorInterpolation(): String {
+        return getStyle("color-interpolation");
+    }
+
+    public set colorInterpolation(v: String): String {
+        setStyle("color-interpolation", v);
+        return v;
+    }
+    
+    public get colorInterpolationFilters(): String {
+        return getStyle("color-interpolation-filters");
+    }
+
+    public set colorInterpolationFilters(v: String): String {
+        setStyle("color-interpolation-filters", v);
+        return v;
+    }
+    
+    public get colorProfile(): String {
+        return getStyle("color-profile");
+    }
+
+    public set colorProfile(v: String): String {
+        setStyle("color-profile", v);
+        return v;
+    }
+    
+    public get colorRendering(): String {
+        return getStyle("color-rendering");
+    }
+
+    public set colorRendering(v: String): String {
+        setStyle("color-rendering", v);
+        return v;
+    }
+    
+    public get columnCount(): String {
+        return getStyle("column-count");
+    }
+
+    public set columnCount(v: String): String {
+        setStyle("column-count", v);
+        return v;
+    }
+    
+    public get columnFill(): String {
+        return getStyle("column-fill");
+    }
+
+    public set columnFill(v: String): String {
+        setStyle("column-fill", v);
+        return v;
+    }
+    
+    public get columnGap(): String {
+        return getStyle("column-gap");
+    }
+
+    public set columnGap(v: String): String {
+        setStyle("column-gap", v);
+        return v;
+    }
+    
+    public get columnRule(): String {
+        return getStyle("column-rule");
+    }
+
+    public set columnRule(v: String): String {
+        setStyle("column-rule", v);
+        return v;
+    }
+    
+    public get columnRuleColor(): String {
+        return getStyle("column-rule-color");
+    }
+
+    public set columnRuleColor(v: String): String {
+        setStyle("column-rule-color", v);
+        return v;
+    }
+    
+    public get columnRuleStyle(): String {
+        return getStyle("column-rule-style");
+    }
+
+    public set columnRuleStyle(v: String): String {
+        setStyle("column-rule-style", v);
+        return v;
+    }
+    
+    public get columnRuleWidth(): String {
+        return getStyle("column-rule-width");
+    }
+
+    public set columnRuleWidth(v: String): String {
+        setStyle("column-rule-width", v);
+        return v;
+    }
+    
+    public get columnSpan(): String {
+        return getStyle("column-span");
+    }
+
+    public set columnSpan(v: String): String {
+        setStyle("column-span", v);
+        return v;
+    }
+    
+    public get columnWidth(): String {
+        return getStyle("column-width");
+    }
+
+    public set columnWidth(v: String): String {
+        setStyle("column-width", v);
+        return v;
+    }
+    
+    public get columns(): String {
+        return getStyle("columns");
+    }
+
+    public set columns(v: String): String {
+        setStyle("columns", v);
+        return v;
+    }
+    
+    public get contain(): String {
+        return getStyle("contain");
+    }
+
+    public set contain(v: String): String {
+        setStyle("contain", v);
+        return v;
+    }
+    
+    public get content(): String {
+        return getStyle("content");
+    }
+
+    public set content(v: String): String {
+        setStyle("content", v);
+        return v;
+    }
+    
+    public get counterIncrement(): String {
+        return getStyle("counter-increment");
+    }
+
+    public set counterIncrement(v: String): String {
+        setStyle("counter-increment", v);
+        return v;
+    }
+    
+    public get counterReset(): String {
+        return getStyle("counter-reset");
+    }
+
+    public set counterReset(v: String): String {
+        setStyle("counter-reset", v);
+        return v;
+    }
+    
+    public get counterSet(): String {
+        return getStyle("counter-set");
+    }
+
+    public set counterSet(v: String): String {
+        setStyle("counter-set", v);
+        return v;
+    }
+    
+    public get cue(): String {
+        return getStyle("cue");
+    }
+
+    public set cue(v: String): String {
+        setStyle("cue", v);
+        return v;
+    }
+    
+    public get cueAfter(): String {
+        return getStyle("cue-after");
+    }
+
+    public set cueAfter(v: String): String {
+        setStyle("cue-after", v);
+        return v;
+    }
+    
+    public get cueBefore(): String {
+        return getStyle("cue-before");
+    }
+
+    public set cueBefore(v: String): String {
+        setStyle("cue-before", v);
+        return v;
+    }
+    
+    public get cursor(): String {
+        return getStyle("cursor");
+    }
+
+    public set cursor(v: String): String {
+        setStyle("cursor", v);
+        return v;
+    }
+    
+    public get direction(): String {
+        return getStyle("direction");
+    }
+
+    public set direction(v: String): String {
+        setStyle("direction", v);
+        return v;
+    }
+    
+    public get display(): String {
+        return getStyle("display");
+    }
+
+    public set display(v: String): String {
+        setStyle("display", v);
+        return v;
+    }
+    
+    public get displayBox(): String {
+        return getStyle("display-box");
+    }
+
+    public set displayBox(v: String): String {
+        setStyle("display-box", v);
+        return v;
+    }
+    
+    public get displayExtras(): String {
+        return getStyle("display-extras");
+    }
+
+    public set displayExtras(v: String): String {
+        setStyle("display-extras", v);
+        return v;
+    }
+    
+    public get displayInside(): String {
+        return getStyle("display-inside");
+    }
+
+    public set displayInside(v: String): String {
+        setStyle("display-inside", v);
+        return v;
+    }
+    
+    public get displayOutside(): String {
+        return getStyle("display-outside");
+    }
+
+    public set displayOutside(v: String): String {
+        setStyle("display-outside", v);
+        return v;
+    }
+    
+    public get dominantBaseline(): String {
+        return getStyle("dominant-baseline");
+    }
+
+    public set dominantBaseline(v: String): String {
+        setStyle("dominant-baseline", v);
+        return v;
+    }
+    
+    public get elevation(): String {
+        return getStyle("elevation");
+    }
+
+    public set elevation(v: String): String {
+        setStyle("elevation", v);
+        return v;
+    }
+    
+    public get emptyCells(): String {
+        return getStyle("empty-cells");
+    }
+
+    public set emptyCells(v: String): String {
+        setStyle("empty-cells", v);
+        return v;
+    }
+    
+    public get enableBackground(): String {
+        return getStyle("enable-background");
+    }
+
+    public set enableBackground(v: String): String {
+        setStyle("enable-background", v);
+        return v;
+    }
+    
+    public get fill(): String {
+        return getStyle("fill");
+    }
+
+    public set fill(v: String): String {
+        setStyle("fill", v);
+        return v;
+    }
+    
+    public get fillOpacity(): String {
+        return getStyle("fill-opacity");
+    }
+
+    public set fillOpacity(v: String): String {
+        setStyle("fill-opacity", v);
+        return v;
+    }
+    
+    public get fillRule(): String {
+        return getStyle("fill-rule");
+    }
+
+    public set fillRule(v: String): String {
+        setStyle("fill-rule", v);
+        return v;
+    }
+    
+    public get filter(): String {
+        return getStyle("filter");
+    }
+
+    public set filter(v: String): String {
+        setStyle("filter", v);
+        return v;
+    }
+    
+    public get flex(): String {
+        return getStyle("flex");
+    }
+
+    public set flex(v: String): String {
+        setStyle("flex", v);
+        return v;
+    }
+    
+    public get flexBasis(): String {
+        return getStyle("flex-basis");
+    }
+
+    public set flexBasis(v: String): String {
+        setStyle("flex-basis", v);
+        return v;
+    }
+    
+    public get flexDirection(): String {
+        return getStyle("flex-direction");
+    }
+
+    public set flexDirection(v: String): String {
+        setStyle("flex-direction", v);
+        return v;
+    }
+    
+    public get flexFlow(): String {
+        return getStyle("flex-flow");
+    }
+
+    public set flexFlow(v: String): String {
+        setStyle("flex-flow", v);
+        return v;
+    }
+    
+    public get flexGrow(): String {
+        return getStyle("flex-grow");
+    }
+
+    public set flexGrow(v: String): String {
+        setStyle("flex-grow", v);
+        return v;
+    }
+    
+    public get flexShrink(): String {
+        return getStyle("flex-shrink");
+    }
+
+    public set flexShrink(v: String): String {
+        setStyle("flex-shrink", v);
+        return v;
+    }
+    
+    public get flexWrap(): String {
+        return getStyle("flex-wrap");
+    }
+
+    public set flexWrap(v: String): String {
+        setStyle("flex-wrap", v);
+        return v;
+    }
+    
+    public get float(): String {
+        return getStyle("float");
+    }
+
+    public set float(v: String): String {
+        setStyle("float", v);
+        return v;
+    }
+    
+    public get floatDeferColumn(): String {
+        return getStyle("float-defer-column");
+    }
+
+    public set floatDeferColumn(v: String): String {
+        setStyle("float-defer-column", v);
+        return v;
+    }
+    
+    public get floatDeferPage(): String {
+        return getStyle("float-defer-page");
+    }
+
+    public set floatDeferPage(v: String): String {
+        setStyle("float-defer-page", v);
+        return v;
+    }
+    
+    public get floatOffset(): String {
+        return getStyle("float-offset");
+    }
+
+    public set floatOffset(v: String): String {
+        setStyle("float-offset", v);
+        return v;
+    }
+    
+    public get floatWrap(): String {
+        return getStyle("float-wrap");
+    }
+
+    public set floatWrap(v: String): String {
+        setStyle("float-wrap", v);
+        return v;
+    }
+    
+    public get floodColor(): String {
+        return getStyle("flood-color");
+    }
+
+    public set floodColor(v: String): String {
+        setStyle("flood-color", v);
+        return v;
+    }
+    
+    public get floodOpacity(): String {
+        return getStyle("flood-opacity");
+    }
+
+    public set floodOpacity(v: String): String {
+        setStyle("flood-opacity", v);
+        return v;
+    }
+    
+    public get flowFrom(): String {
+        return getStyle("flow-from");
+    }
+
+    public set flowFrom(v: String): String {
+        setStyle("flow-from", v);
+        return v;
+    }
+    
+    public get flowInto(): String {
+        return getStyle("flow-into");
+    }
+
+    public set flowInto(v: String): String {
+        setStyle("flow-into", v);
+        return v;
+    }
+    
+    public get font(): String {
+        return getStyle("font");
+    }
+
+    public set font(v: String): String {
+        setStyle("font", v);
+        return v;
+    }
+    
+    public get fontFamily(): String {
+        return getStyle("font-family");
+    }
+
+    public set fontFamily(v: String): String {
+        setStyle("font-family", v);
+        return v;
+    }
+    
+    public get fontFeatureSettings(): String {
+        return getStyle("font-feature-settings");
+    }
+
+    public set fontFeatureSettings(v: String): String {
+        setStyle("font-feature-settings", v);
+        return v;
+    }
+    
+    public get fontKerning(): String {
+        return getStyle("font-kerning");
+    }
+
+    public set fontKerning(v: String): String {
+        setStyle("font-kerning", v);
+        return v;
+    }
+    
+    public get fontLanguageOverride(): String {
+        return getStyle("font-language-override");
+    }
+
+    public set fontLanguageOverride(v: String): String {
+        setStyle("font-language-override", v);
+        return v;
+    }
+    
+    public get fontSize(): String {
+        return getStyle("font-size");
+    }
+
+    public set fontSize(v: String): String {
+        setStyle("font-size", v);
+        return v;
+    }
+    
+    public get fontSizeAdjust(): String {
+        return getStyle("font-size-adjust");
+    }
+
+    public set fontSizeAdjust(v: String): String {
+        setStyle("font-size-adjust", v);
+        return v;
+    }
+    
+    public get fontStretch(): String {
+        return getStyle("font-stretch");
+    }
+
+    public set fontStretch(v: String): String {
+        setStyle("font-stretch", v);
+        return v;
+    }
+    
+    public get fontStyle(): String {
+        return getStyle("font-style");
+    }
+
+    public set fontStyle(v: String): String {
+        setStyle("font-style", v);
+        return v;
+    }
+    
+    public get fontSynthesis(): String {
+        return getStyle("font-synthesis");
+    }
+
+    public set fontSynthesis(v: String): String {
+        setStyle("font-synthesis", v);
+        return v;
+    }
+    
+    public get fontVariant(): String {
+        return getStyle("font-variant");
+    }
+
+    public set fontVariant(v: String): String {
+        setStyle("font-variant", v);
+        return v;
+    }
+    
+    public get fontVariantAlternates(): String {
+        return getStyle("font-variant-alternates");
+    }
+
+    public set fontVariantAlternates(v: String): String {
+        setStyle("font-variant-alternates", v);
+        return v;
+    }
+    
+    public get fontVariantCaps(): String {
+        return getStyle("font-variant-caps");
+    }
+
+    public set fontVariantCaps(v: String): String {
+        setStyle("font-variant-caps", v);
+        return v;
+    }
+    
+    public get fontVariantEastAsian(): String {
+        return getStyle("font-variant-east-asian");
+    }
+
+    public set fontVariantEastAsian(v: String): String {
+        setStyle("font-variant-east-asian", v);
+        return v;
+    }
+    
+    public get fontVariantLigatures(): String {
+        return getStyle("font-variant-ligatures");
+    }
+
+    public set fontVariantLigatures(v: String): String {
+        setStyle("font-variant-ligatures", v);
+        return v;
+    }
+    
+    public get fontVariantNumeric(): String {
+        return getStyle("font-variant-numeric");
+    }
+
+    public set fontVariantNumeric(v: String): String {
+        setStyle("font-variant-numeric", v);
+        return v;
+    }
+    
+    public get fontVariantPosition(): String {
+        return getStyle("font-variant-position");
+    }
+
+    public set fontVariantPosition(v: String): String {
+        setStyle("font-variant-position", v);
+        return v;
+    }
+    
+    public get fontWeight(): String {
+        return getStyle("font-weight");
+    }
+
+    public set fontWeight(v: String): String {
+        setStyle("font-weight", v);
+        return v;
+    }
+    
+    public get footnotePolicy(): String {
+        return getStyle("footnote-policy");
+    }
+
+    public set footnotePolicy(v: String): String {
+        setStyle("footnote-policy", v);
+        return v;
+    }
+    
+    public get glyphOrientationHorizontal(): String {
+        return getStyle("glyph-orientation-horizontal");
+    }
+
+    public set glyphOrientationHorizontal(v: String): String {
+        setStyle("glyph-orientation-horizontal", v);
+        return v;
+    }
+    
+    public get glyphOrientationVertical(): String {
+        return getStyle("glyph-orientation-vertical");
+    }
+
+    public set glyphOrientationVertical(v: String): String {
+        setStyle("glyph-orientation-vertical", v);
+        return v;
+    }
+    
+    public get grid(): String {
+        return getStyle("grid");
+    }
+
+    public set grid(v: String): String {
+        setStyle("grid", v);
+        return v;
+    }
+    
+    public get gridArea(): String {
+        return getStyle("grid-area");
+    }
+
+    public set gridArea(v: String): String {
+        setStyle("grid-area", v);
+        return v;
+    }
+    
+    public get gridAutoColumns(): String {
+        return getStyle("grid-auto-columns");
+    }
+
+    public set gridAutoColumns(v: String): String {
+        setStyle("grid-auto-columns", v);
+        return v;
+    }
+    
+    public get gridAutoFlow(): String {
+        return getStyle("grid-auto-flow");
+    }
+
+    public set gridAutoFlow(v: String): String {
+        setStyle("grid-auto-flow", v);
+        return v;
+    }
+    
+    public get gridAutoRows(): String {
+        return getStyle("grid-auto-rows");
+    }
+
+    public set gridAutoRows(v: String): String {
+        setStyle("grid-auto-rows", v);
+        return v;
+    }
+    
+    public get gridColumn(): String {
+        return getStyle("grid-column");
+    }
+
+    public set gridColumn(v: String): String {
+        setStyle("grid-column", v);
+        return v;
+    }
+    
+    public get gridColumnEnd(): String {
+        return getStyle("grid-column-end");
+    }
+
+    public set gridColumnEnd(v: String): String {
+        setStyle("grid-column-end", v);
+        return v;
+    }
+    
+    public get gridColumnStart(): String {
+        return getStyle("grid-column-start");
+    }
+
+    public set gridColumnStart(v: String): String {
+        setStyle("grid-column-start", v);
+        return v;
+    }
+    
+    public get gridRow(): String {
+        return getStyle("grid-row");
+    }
+
+    public set gridRow(v: String): String {
+        setStyle("grid-row", v);
+        return v;
+    }
+    
+    public get gridRowEnd(): String {
+        return getStyle("grid-row-end");
+    }
+
+    public set gridRowEnd(v: String): String {
+        setStyle("grid-row-end", v);
+        return v;
+    }
+    
+    public get gridRowStart(): String {
+        return getStyle("grid-row-start");
+    }
+
+    public set gridRowStart(v: String): String {
+        setStyle("grid-row-start", v);
+        return v;
+    }
+    
+    public get gridTemplate(): String {
+        return getStyle("grid-template");
+    }
+
+    public set gridTemplate(v: String): String {
+        setStyle("grid-template", v);
+        return v;
+    }
+    
+    public get gridTemplateAreas(): String {
+        return getStyle("grid-template-areas");
+    }
+
+    public set gridTemplateAreas(v: String): String {
+        setStyle("grid-template-areas", v);
+        return v;
+    }
+    
+    public get gridTemplateColumns(): String {
+        return getStyle("grid-template-columns");
+    }
+
+    public set gridTemplateColumns(v: String): String {
+        setStyle("grid-template-columns", v);
+        return v;
+    }
+    
+    public get gridTemplateRows(): String {
+        return getStyle("grid-template-rows");
+    }
+
+    public set gridTemplateRows(v: String): String {
+        setStyle("grid-template-rows", v);
+        return v;
+    }
+    
+    public get hangingPunctuation(): String {
+        return getStyle("hanging-punctuation");
+    }
+
+    public set hangingPunctuation(v: String): String {
+        setStyle("hanging-punctuation", v);
+        return v;
+    }
+    
+    public get height(): String {
+        return getStyle("height");
+    }
+
+    public set height(v: String): String {
+        setStyle("height", v);
+        return v;
+    }
+    
+    public get hyphenateCharacter(): String {
+        return getStyle("hyphenate-character");
+    }
+
+    public set hyphenateCharacter(v: String): String {
+        setStyle("hyphenate-character", v);
+        return v;
+    }
+    
+    public get hyphenateLimitChars(): String {
+        return getStyle("hyphenate-limit-chars");
+    }
+
+    public set hyphenateLimitChars(v: String): String {
+        setStyle("hyphenate-limit-chars", v);
+        return v;
+    }
+    
+    public get hyphenateLimitLast(): String {
+        return getStyle("hyphenate-limit-last");
+    }
+
+    public set hyphenateLimitLast(v: String): String {
+        setStyle("hyphenate-limit-last", v);
+        return v;
+    }
+    
+    public get hyphenateLimitLines(): String {
+        return getStyle("hyphenate-limit-lines");
+    }
+
+    public set hyphenateLimitLines(v: String): String {
+        setStyle("hyphenate-limit-lines", v);
+        return v;
+    }
+    
+    public get hyphenateLimitZone(): String {
+        return getStyle("hyphenate-limit-zone");
+    }
+
+    public set hyphenateLimitZone(v: String): String {
+        setStyle("hyphenate-limit-zone", v);
+        return v;
+    }
+    
+    public get hyphens(): String {
+        return getStyle("hyphens");
+    }
+
+    public set hyphens(v: String): String {
+        setStyle("hyphens", v);
+        return v;
+    }
+    
+    public get icon(): String {
+        return getStyle("icon");
+    }
+
+    public set icon(v: String): String {
+        setStyle("icon", v);
+        return v;
+    }
+    
+    public get imageOrientation(): String {
+        return getStyle("image-orientation");
+    }
+
+    public set imageOrientation(v: String): String {
+        setStyle("image-orientation", v);
+        return v;
+    }
+    
+    public get imageRendering(): String {
+        return getStyle("image-rendering");
+    }
+
+    public set imageRendering(v: String): String {
+        setStyle("image-rendering", v);
+        return v;
+    }
+    
+    public get imageResolution(): String {
+        return getStyle("image-resolution");
+    }
+
+    public set imageResolution(v: String): String {
+        setStyle("image-resolution", v);
+        return v;
+    }
+    
+    public get ime(): String {
+        return getStyle("ime");
+    }
+
+    public set ime(v: String): String {
+        setStyle("ime", v);
+        return v;
+    }
+    
+    public get imeAlign(): String {
+        return getStyle("ime-align");
+    }
+
+    public set imeAlign(v: String): String {
+        setStyle("ime-align", v);
+        return v;
+    }
+    
+    public get imeMode(): String {
+        return getStyle("ime-mode");
+    }
+
+    public set imeMode(v: String): String {
+        setStyle("ime-mode", v);
+        return v;
+    }
+    
+    public get imeOffset(): String {
+        return getStyle("ime-offset");
+    }
+
+    public set imeOffset(v: String): String {
+        setStyle("ime-offset", v);
+        return v;
+    }
+    
+    public get imeWidth(): String {
+        return getStyle("ime-width");
+    }
+
+    public set imeWidth(v: String): String {
+        setStyle("ime-width", v);
+        return v;
+    }
+    
+    public get initialLetters(): String {
+        return getStyle("initial-letters");
+    }
+
+    public set initialLetters(v: String): String {
+        setStyle("initial-letters", v);
+        return v;
+    }
+    
+    public get inlineBoxAlign(): String {
+        return getStyle("inline-box-align");
+    }
+
+    public set inlineBoxAlign(v: String): String {
+        setStyle("inline-box-align", v);
+        return v;
+    }
+    
+    public get isolation(): String {
+        return getStyle("isolation");
+    }
+
+    public set isolation(v: String): String {
+        setStyle("isolation", v);
+        return v;
+    }
+    
+    public get justifyContent(): String {
+        return getStyle("justify-content");
+    }
+
+    public set justifyContent(v: String): String {
+        setStyle("justify-content", v);
+        return v;
+    }
+    
+    public get justifyItems(): String {
+        return getStyle("justify-items");
+    }
+
+    public set justifyItems(v: String): String {
+        setStyle("justify-items", v);
+        return v;
+    }
+    
+    public get justifySelf(): String {
+        return getStyle("justify-self");
+    }
+
+    public set justifySelf(v: String): String {
+        setStyle("justify-self", v);
+        return v;
+    }
+    
+    public get kerning(): String {
+        return getStyle("kerning");
+    }
+
+    public set kerning(v: String): String {
+        setStyle("kerning", v);
+        return v;
+    }
+    
+    public get left(): String {
+        return getStyle("left");
+    }
+
+    public set left(v: String): String {
+        setStyle("left", v);
+        return v;
+    }
+    
+    public get letterSpacing(): String {
+        return getStyle("letter-spacing");
+    }
+
+    public set letterSpacing(v: String): String {
+        setStyle("letter-spacing", v);
+        return v;
+    }
+    
+    public get lightingColor(): String {
+        return getStyle("lighting-color");
+    }
+
+    public set lightingColor(v: String): String {
+        setStyle("lighting-color", v);
+        return v;
+    }
+    
+    public get lineBoxContain(): String {
+        return getStyle("line-box-contain");
+    }
+
+    public set lineBoxContain(v: String): String {
+        setStyle("line-box-contain", v);
+        return v;
+    }
+    
+    public get lineBreak(): String {
+        return getStyle("line-break");
+    }
+
+    public set lineBreak(v: String): String {
+        setStyle("line-break", v);
+        return v;
+    }
+    
+    public get lineGrid(): String {
+        return getStyle("line-grid");
+    }
+
+    public set lineGrid(v: String): String {
+        setStyle("line-grid", v);
+        return v;
+    }
+    
+    public get lineHeight(): String {
+        return getStyle("line-height");
+    }
+
+    public set lineHeight(v: String): String {
+        setStyle("line-height", v);
+        return v;
+    }
+    
+    public get lineSlack(): String {
+        return getStyle("line-slack");
+    }
+
+    public set lineSlack(v: String): String {
+        setStyle("line-slack", v);
+        return v;
+    }
+    
+    public get lineSnap(): String {
+        return getStyle("line-snap");
+    }
+
+    public set lineSnap(v: String): String {
+        setStyle("line-snap", v);
+        return v;
+    }
+    
+    public get listStyle(): String {
+        return getStyle("list-style");
+    }
+
+    public set listStyle(v: String): String {
+        setStyle("list-style", v);
+        return v;
+    }
+    
+    public get listStyleImage(): String {
+        return getStyle("list-style-image");
+    }
+
+    public set listStyleImage(v: String): String {
+        setStyle("list-style-image", v);
+        return v;
+    }
+    
+    public get listStylePosition(): String {
+        return getStyle("list-style-position");
+    }
+
+    public set listStylePosition(v: String): String {
+        setStyle("list-style-position", v);
+        return v;
+    }
+    
+    public get listStyleType(): String {
+        return getStyle("list-style-type");
+    }
+
+    public set listStyleType(v: String): String {
+        setStyle("list-style-type", v);
+        return v;
+    }
+    
+    public get margin(): String {
+        return getStyle("margin");
+    }
+
+    public set margin(v: String): String {
+        setStyle("margin", v);
+        return v;
+    }
+    
+    public get marginBottom(): String {
+        return getStyle("margin-bottom");
+    }
+
+    public set marginBottom(v: String): String {
+        setStyle("margin-bottom", v);
+        return v;
+    }
+    
+    public get marginLeft(): String {
+        return getStyle("margin-left");
+    }
+
+    public set marginLeft(v: String): String {
+        setStyle("margin-left", v);
+        return v;
+    }
+    
+    public get marginRight(): String {
+        return getStyle("margin-right");
+    }
+
+    public set marginRight(v: String): String {
+        setStyle("margin-right", v);
+        return v;
+    }
+    
+    public get marginTop(): String {
+        return getStyle("margin-top");
+    }
+
+    public set marginTop(v: String): String {
+        setStyle("margin-top", v);
+        return v;
+    }
+    
+    public get marker(): String {
+        return getStyle("marker");
+    }
+
+    public set marker(v: String): String {
+        setStyle("marker", v);
+        return v;
+    }
+    
+    public get markerEnd(): String {
+        return getStyle("marker-end");
+    }
+
+    public set markerEnd(v: String): String {
+        setStyle("marker-end", v);
+        return v;
+    }
+    
+    public get markerKnockoutLeft(): String {
+        return getStyle("marker-knockout-left");
+    }
+
+    public set markerKnockoutLeft(v: String): String {
+        setStyle("marker-knockout-left", v);
+        return v;
+    }
+    
+    public get markerKnockoutRight(): String {
+        return getStyle("marker-knockout-right");
+    }
+
+    public set markerKnockoutRight(v: String): String {
+        setStyle("marker-knockout-right", v);
+        return v;
+    }
+    
+    public get markerMid(): String {
+        return getStyle("marker-mid");
+    }
+
+    public set markerMid(v: String): String {
+        setStyle("marker-mid", v);
+        return v;
+    }
+    
+    public get markerPattern(): String {
+        return getStyle("marker-pattern");
+    }
+
+    public set markerPattern(v: String): String {
+        setStyle("marker-pattern", v);
+        return v;
+    }
+    
+    public get markerSegment(): String {
+        return getStyle("marker-segment");
+    }
+
+    public set markerSegment(v: String): String {
+        setStyle("marker-segment", v);
+        return v;
+    }
+    
+    public get markerSide(): String {
+        return getStyle("marker-side");
+    }
+
+    public set markerSide(v: String): String {
+        setStyle("marker-side", v);
+        return v;
+    }
+    
+    public get markerStart(): String {
+        return getStyle("marker-start");
+    }
+
+    public set markerStart(v: String): String {
+        setStyle("marker-start", v);
+        return v;
+    }
+    
+    public get marks(): String {
+        return getStyle("marks");
+    }
+
+    public set marks(v: String): String {
+        setStyle("marks", v);
+        return v;
+    }
+    
+    public get marqueeDirection(): String {
+        return getStyle("marquee-direction");
+    }
+
+    public set marqueeDirection(v: String): String {
+        setStyle("marquee-direction", v);
+        return v;
+    }
+    
+    public get marqueePlayCount(): String {
+        return getStyle("marquee-play-count");
+    }
+
+    public set marqueePlayCount(v: String): String {
+        setStyle("marquee-play-count", v);
+        return v;
+    }
+    
+    public get marqueeSpeed(): String {
+        return getStyle("marquee-speed");
+    }
+
+    public set marqueeSpeed(v: String): String {
+        setStyle("marquee-speed", v);
+        return v;
+    }
+    
+    public get marqueeStyle(): String {
+        return getStyle("marquee-style");
+    }
+
+    public set marqueeStyle(v: String): String {
+        setStyle("marquee-style", v);
+        return v;
+    }
+    
+    public get mask(): String {
+        return getStyle("mask");
+    }
+
+    public set mask(v: String): String {
+        setStyle("mask", v);
+        return v;
+    }
+    
+    public get maskBox(): String {
+        return getStyle("mask-box");
+    }
+
+    public set maskBox(v: String): String {
+        setStyle("mask-box", v);
+        return v;
+    }
+    
+    public get maskBoxOutset(): String {
+        return getStyle("mask-box-outset");
+    }
+
+    public set maskBoxOutset(v: String): String {
+        setStyle("mask-box-outset", v);
+        return v;
+    }
+    
+    public get maskBoxRepeat(): String {
+        return getStyle("mask-box-repeat");
+    }
+
+    public set maskBoxRepeat(v: String): String {
+        setStyle("mask-box-repeat", v);
+        return v;
+    }
+    
+    public get maskBoxSlice(): String {
+        return getStyle("mask-box-slice");
+    }
+
+    public set maskBoxSlice(v: String): String {
+        setStyle("mask-box-slice", v);
+        return v;
+    }
+    
+    public get maskBoxSource(): String {
+        return getStyle("mask-box-source");
+    }
+
+    public set maskBoxSource(v: String): String {
+        setStyle("mask-box-source", v);
+        return v;
+    }
+    
+    public get maskBoxWidth(): String {
+        return getStyle("mask-box-width");
+    }
+
+    public set maskBoxWidth(v: String): String {
+        setStyle("mask-box-width", v);
+        return v;
+    }
+    
+    public get maskClip(): String {
+        return getStyle("mask-clip");
+    }
+
+    public set maskClip(v: String): String {
+        setStyle("mask-clip", v);
+        return v;
+    }
+    
+    public get maskImage(): String {
+        return getStyle("mask-image");
+    }
+
+    public set maskImage(v: String): String {
+        setStyle("mask-image", v);
+        return v;
+    }
+    
+    public get maskOrigin(): String {
+        return getStyle("mask-origin");
+    }
+
+    public set maskOrigin(v: String): String {
+        setStyle("mask-origin", v);
+        return v;
+    }
+    
+    public get maskPosition(): String {
+        return getStyle("mask-position");
+    }
+
+    public set maskPosition(v: String): String {
+        setStyle("mask-position", v);
+        return v;
+    }
+    
+    public get maskRepeat(): String {
+        return getStyle("mask-repeat");
+    }
+
+    public set maskRepeat(v: String): String {
+        setStyle("mask-repeat", v);
+        return v;
+    }
+    
+    public get maskSize(): String {
+        return getStyle("mask-size");
+    }
+
+    public set maskSize(v: String): String {
+        setStyle("mask-size", v);
+        return v;
+    }
+    
+    public get maskType(): String {
+        return getStyle("mask-type");
+    }
+
+    public set maskType(v: String): String {
+        setStyle("mask-type", v);
+        return v;
+    }
+    
+    public get maxHeight(): String {
+        return getStyle("max-height");
+    }
+
+    public set maxHeight(v: String): String {
+        setStyle("max-height", v);
+        return v;
+    }
+    
+    public get maxLines(): String {
+        return getStyle("max-lines");
+    }
+
+    public set maxLines(v: String): String {
+        setStyle("max-lines", v);
+        return v;
+    }
+    
+    public get maxWidth(): String {
+        return getStyle("max-width");
+    }
+
+    public set maxWidth(v: String): String {
+        setStyle("max-width", v);
+        return v;
+    }
+    
+    public get minHeight(): String {
+        return getStyle("min-height");
+    }
+
+    public set minHeight(v: String): String {
+        setStyle("min-height", v);
+        return v;
+    }
+    
+    public get minWidth(): String {
+        return getStyle("min-width");
+    }
+
+    public set minWidth(v: String): String {
+        setStyle("min-width", v);
+        return v;
+    }
+    
+    public get mixBlendMode(): String {
+        return getStyle("mix-blend-mode");
+    }
+
+    public set mixBlendMode(v: String): String {
+        setStyle("mix-blend-mode", v);
+        return v;
+    }
+    
+    public get navDown(): String {
+        return getStyle("nav-down");
+    }
+
+    public set navDown(v: String): String {
+        setStyle("nav-down", v);
+        return v;
+    }
+    
+    public get navIndex(): String {
+        return getStyle("nav-index");
+    }
+
+    public set navIndex(v: String): String {
+        setStyle("nav-index", v);
+        return v;
+    }
+    
+    public get navLeft(): String {
+        return getStyle("nav-left");
+    }
+
+    public set navLeft(v: String): String {
+        setStyle("nav-left", v);
+        return v;
+    }
+    
+    public get navRight(): String {
+        return getStyle("nav-right");
+    }
+
+    public set navRight(v: String): String {
+        setStyle("nav-right", v);
+        return v;
+    }
+    
+    public get navUp(): String {
+        return getStyle("nav-up");
+    }
+
+    public set navUp(v: String): String {
+        setStyle("nav-up", v);
+        return v;
+    }
+    
+    public get objectFit(): String {
+        return getStyle("object-fit");
+    }
+
+    public set objectFit(v: String): String {
+        setStyle("object-fit", v);
+        return v;
+    }
+    
+    public get objectPosition(): String {
+        return getStyle("object-position");
+    }
+
+    public set objectPosition(v: String): String {
+        setStyle("object-position", v);
+        return v;
+    }
+    
+    public get offsetAfter(): String {
+        return getStyle("offset-after");
+    }
+
+    public set offsetAfter(v: String): String {
+        setStyle("offset-after", v);
+        return v;
+    }
+    
+    public get offsetBefore(): String {
+        return getStyle("offset-before");
+    }
+
+    public set offsetBefore(v: String): String {
+        setStyle("offset-before", v);
+        return v;
+    }
+    
+    public get offsetEnd(): String {
+        return getStyle("offset-end");
+    }
+
+    public set offsetEnd(v: String): String {
+        setStyle("offset-end", v);
+        return v;
+    }
+    
+    public get offsetStart(): String {
+        return getStyle("offset-start");
+    }
+
+    public set offsetStart(v: String): String {
+        setStyle("offset-start", v);
+        return v;
+    }
+    
+    public get opacity(): String {
+        return getStyle("opacity");
+    }
+
+    public set opacity(v: String): String {
+        setStyle("opacity", v);
+        return v;
+    }
+    
+    public get order(): String {
+        return getStyle("order");
+    }
+
+    public set order(v: String): String {
+        setStyle("order", v);
+        return v;
+    }
+    
+    public get orphans(): String {
+        return getStyle("orphans");
+    }
+
+    public set orphans(v: String): String {
+        setStyle("orphans", v);
+        return v;
+    }
+    
+    public get outline(): String {
+        return getStyle("outline");
+    }
+
+    public set outline(v: String): String {
+        setStyle("outline", v);
+        return v;
+    }
+    
+    public get outlineColor(): String {
+        return getStyle("outline-color");
+    }
+
+    public set outlineColor(v: String): String {
+        setStyle("outline-color", v);
+        return v;
+    }
+    
+    public get outlineOffset(): String {
+        return getStyle("outline-offset");
+    }
+
+    public set outlineOffset(v: String): String {
+        setStyle("outline-offset", v);
+        return v;
+    }
+    
+    public get outlineStyle(): String {
+        return getStyle("outline-style");
+    }
+
+    public set outlineStyle(v: String): String {
+        setStyle("outline-style", v);
+        return v;
+    }
+    
+    public get outlineWidth(): String {
+        return getStyle("outline-width");
+    }
+
+    public set outlineWidth(v: String): String {
+        setStyle("outline-width", v);
+        return v;
+    }
+    
+    public get overflow(): String {
+        return getStyle("overflow");
+    }
+
+    public set overflow(v: String): String {
+        setStyle("overflow", v);
+        return v;
+    }
+    
+    public get overflowStyle(): String {
+        return getStyle("overflow-style");
+    }
+
+    public set overflowStyle(v: String): String {
+        setStyle("overflow-style", v);
+        return v;
+    }
+    
+    public get overflowWrap(): String {
+        return getStyle("overflow-wrap");
+    }
+
+    public set overflowWrap(v: String): String {
+        setStyle("overflow-wrap", v);
+        return v;
+    }
+    
+    public get overflowX(): String {
+        return getStyle("overflow-x");
+    }
+
+    public set overflowX(v: String): String {
+        setStyle("overflow-x", v);
+        return v;
+    }
+    
+    public get overflowY(): String {
+        return getStyle("overflow-y");
+    }
+
+    public set overflowY(v: String): String {
+        setStyle("overflow-y", v);
+        return v;
+    }
+    
+    public get padding(): String {
+        return getStyle("padding");
+    }
+
+    public set padding(v: String): String {
+        setStyle("padding", v);
+        return v;
+    }
+    
+    public get paddingBottom(): String {
+        return getStyle("padding-bottom");
+    }
+
+    public set paddingBottom(v: String): String {
+        setStyle("padding-bottom", v);
+        return v;
+    }
+    
+    public get paddingLeft(): String {
+        return getStyle("padding-left");
+    }
+
+    public set paddingLeft(v: String): String {
+        setStyle("padding-left", v);
+        return v;
+    }
+    
+    public get paddingRight(): String {
+        return getStyle("padding-right");
+    }
+
+    public set paddingRight(v: String): String {
+        setStyle("padding-right", v);
+        return v;
+    }
+    
+    public get paddingTop(): String {
+        return getStyle("padding-top");
+    }
+
+    public set paddingTop(v: String): String {
+        setStyle("padding-top", v);
+        return v;
+    }
+    
+    public get page(): String {
+        return getStyle("page");
+    }
+
+    public set page(v: String): String {
+        setStyle("page", v);
+        return v;
+    }
+    
+    public get pageBreakAfter(): String {
+        return getStyle("page-break-after");
+    }
+
+    public set pageBreakAfter(v: String): String {
+        setStyle("page-break-after", v);
+        return v;
+    }
+    
+    public get pageBreakBefore(): String {
+        return getStyle("page-break-before");
+    }
+
+    public set pageBreakBefore(v: String): String {
+        setStyle("page-break-before", v);
+        return v;
+    }
+    
+    public get pageBreakInside(): String {
+        return getStyle("page-break-inside");
+    }
+
+    public set pageBreakInside(v: String): String {
+        setStyle("page-break-inside", v);
+        return v;
+    }
+    
+    public get paintOrder(): String {
+        return getStyle("paint-order");
+    }
+
+    public set paintOrder(v: String): String {
+        setStyle("paint-order", v);
+        return v;
+    }
+    
+    public get pause(): String {
+        return getStyle("pause");
+    }
+
+    public set pause(v: String): String {
+        setStyle("pause", v);
+        return v;
+    }
+    
+    public get pauseAfter(): String {
+        return getStyle("pause-after");
+    }
+
+    public set pauseAfter(v: String): String {
+        setStyle("pause-after", v);
+        return v;
+    }
+    
+    public get pauseBefore(): String {
+        return getStyle("pause-before");
+    }
+
+    public set pauseBefore(v: String): String {
+        setStyle("pause-before", v);
+        return v;
+    }
+    
+    public get perspective(): String {
+        return getStyle("perspective");
+    }
+
+    public set perspective(v: String): String {
+        setStyle("perspective", v);
+        return v;
+    }
+    
+    public get perspectiveOrigin(): String {
+        return getStyle("perspective-origin");
+    }
+
+    public set perspectiveOrigin(v: String): String {
+        setStyle("perspective-origin", v);
+        return v;
+    }
+    
+    public get pitch(): String {
+        return getStyle("pitch");
+    }
+
+    public set pitch(v: String): String {
+        setStyle("pitch", v);
+        return v;
+    }
+    
+    public get pitchRange(): String {
+        return getStyle("pitch-range");
+    }
+
+    public set pitchRange(v: String): String {
+        setStyle("pitch-range", v);
+        return v;
+    }
+    
+    public get playDuring(): String {
+        return getStyle("play-during");
+    }
+
+    public set playDuring(v: String): String {
+        setStyle("play-during", v);
+        return v;
+    }
+    
+    public get pointerEvents(): String {
+        return getStyle("pointer-events");
+    }
+
+    public set pointerEvents(v: String): String {
+        setStyle("pointer-events", v);
+        return v;
+    }
+    
+    public get position(): String {
+        return getStyle("position");
+    }
+
+    public set position(v: String): String {
+        setStyle("position", v);
+        return v;
+    }
+    
+    public get quotes(): String {
+        return getStyle("quotes");
+    }
+
+    public set quotes(v: String): String {
+        setStyle("quotes", v);
+        return v;
+    }
+    
+    public get regionFragment(): String {
+        return getStyle("region-fragment");
+    }
+
+    public set regionFragment(v: String): String {
+        setStyle("region-fragment", v);
+        return v;
+    }
+    
+    public get resize(): String {
+        return getStyle("resize");
+    }
+
+    public set resize(v: String): String {
+        setStyle("resize", v);
+        return v;
+    }
+    
+    public get rest(): String {
+        return getStyle("rest");
+    }
+
+    public set rest(v: String): String {
+        setStyle("rest", v);
+        return v;
+    }
+    
+    public get restAfter(): String {
+        return getStyle("rest-after");
+    }
+
+    public set restAfter(v: String): String {
+        setStyle("rest-after", v);
+        return v;
+    }
+    
+    public get restBefore(): String {
+        return getStyle("rest-before");
+    }
+
+    public set restBefore(v: String): String {
+        setStyle("rest-before", v);
+        return v;
+    }
+    
+    public get richness(): String {
+        return getStyle("richness");
+    }
+
+    public set richness(v: String): String {
+        setStyle("richness", v);
+        return v;
+    }
+    
+    public get right(): String {
+        return getStyle("right");
+    }
+
+    public set right(v: String): String {
+        setStyle("right", v);
+        return v;
+    }
+    
+    public get rubyAlign(): String {
+        return getStyle("ruby-align");
+    }
+
+    public set rubyAlign(v: String): String {
+        setStyle("ruby-align", v);
+        return v;
+    }
+    
+    public get rubyMerge(): String {
+        return getStyle("ruby-merge");
+    }
+
+    public set rubyMerge(v: String): String {
+        setStyle("ruby-merge", v);
+        return v;
+    }
+    
+    public get rubyPosition(): String {
+        return getStyle("ruby-position");
+    }
+
+    public set rubyPosition(v: String): String {
+        setStyle("ruby-position", v);
+        return v;
+    }
+    
+    public get scrollBehavior(): String {
+        return getStyle("scroll-behavior");
+    }
+
+    public set scrollBehavior(v: String): String {
+        setStyle("scroll-behavior", v);
+        return v;
+    }
+    
+    public get scrollSnapCoordinate(): String {
+        return getStyle("scroll-snap-coordinate");
+    }
+
+    public set scrollSnapCoordinate(v: String): String {
+        setStyle("scroll-snap-coordinate", v);
+        return v;
+    }
+    
+    public get scrollSnapDestination(): String {
+        return getStyle("scroll-snap-destination");
+    }
+
+    public set scrollSnapDestination(v: String): String {
+        setStyle("scroll-snap-destination", v);
+        return v;
+    }
+    
+    public get scrollSnapPointsX(): String {
+        return getStyle("scroll-snap-points-x");
+    }
+
+    public set scrollSnapPointsX(v: String): String {
+        setStyle("scroll-snap-points-x", v);
+        return v;
+    }
+    
+    public get scrollSnapPointsY(): String {
+        return getStyle("scroll-snap-points-y");
+    }
+
+    public set scrollSnapPointsY(v: String): String {
+        setStyle("scroll-snap-points-y", v);
+        return v;
+    }
+    
+    public get scrollSnapType(): String {
+        return getStyle("scroll-snap-type");
+    }
+
+    public set scrollSnapType(v: String): String {
+        setStyle("scroll-snap-type", v);
+        return v;
+    }
+    
+    public get shapeImageThreshold(): String {
+        return getStyle("shape-image-threshold");
+    }
+
+    public set shapeImageThreshold(v: String): String {
+        setStyle("shape-image-threshold", v);
+        return v;
+    }
+    
+    public get shapeInside(): String {
+        return getStyle("shape-inside");
+    }
+
+    public set shapeInside(v: String): String {
+        setStyle("shape-inside", v);
+        return v;
+    }
+    
+    public get shapeMargin(): String {
+        return getStyle("shape-margin");
+    }
+
+    public set shapeMargin(v: String): String {
+        setStyle("shape-margin", v);
+        return v;
+    }
+    
+    public get shapeOutside(): String {
+        return getStyle("shape-outside");
+    }
+
+    public set shapeOutside(v: String): String {
+        setStyle("shape-outside", v);
+        return v;
+    }
+    
+    public get shapePadding(): String {
+        return getStyle("shape-padding");
+    }
+
+    public set shapePadding(v: String): String {
+        setStyle("shape-padding", v);
+        return v;
+    }
+    
+    public get shapeRendering(): String {
+        return getStyle("shape-rendering");
+    }
+
+    public set shapeRendering(v: String): String {
+        setStyle("shape-rendering", v);
+        return v;
+    }
+    
+    public get size(): String {
+        return getStyle("size");
+    }
+
+    public set size(v: String): String {
+        setStyle("size", v);
+        return v;
+    }
+    
+    public get speak(): String {
+        return getStyle("speak");
+    }
+
+    public set speak(v: String): String {
+        setStyle("speak", v);
+        return v;
+    }
+    
+    public get speakAs(): String {
+        return getStyle("speak-as");
+    }
+
+    public set speakAs(v: String): String {
+        setStyle("speak-as", v);
+        return v;
+    }
+    
+    public get speakHeader(): String {
+        return getStyle("speak-header");
+    }
+
+    public set speakHeader(v: String): String {
+        setStyle("speak-header", v);
+        return v;
+    }
+    
+    public get speakNumeral(): String {
+        return getStyle("speak-numeral");
+    }
+
+    public set speakNumeral(v: String): String {
+        setStyle("speak-numeral", v);
+        return v;
+    }
+    
+    public get speakPunctuation(): String {
+        return getStyle("speak-punctuation");
+    }
+
+    public set speakPunctuation(v: String): String {
+        setStyle("speak-punctuation", v);
+        return v;
+    }
+    
+    public get speechRate(): String {
+        return getStyle("speech-rate");
+    }
+
+    public set speechRate(v: String): String {
+        setStyle("speech-rate", v);
+        return v;
+    }
+    
+    public get stopColor(): String {
+        return getStyle("stop-color");
+    }
+
+    public set stopColor(v: String): String {
+        setStyle("stop-color", v);
+        return v;
+    }
+    
+    public get stopOpacity(): String {
+        return getStyle("stop-opacity");
+    }
+
+    public set stopOpacity(v: String): String {
+        setStyle("stop-opacity", v);
+        return v;
+    }
+    
+    public get stress(): String {
+        return getStyle("stress");
+    }
+
+    public set stress(v: String): String {
+        setStyle("stress", v);
+        return v;
+    }
+    
+    public get stringSet(): String {
+        return getStyle("string-set");
+    }
+
+    public set stringSet(v: String): String {
+        setStyle("string-set", v);
+        return v;
+    }
+    
+    public get stroke(): String {
+        return getStyle("stroke");
+    }
+
+    public set stroke(v: String): String {
+        setStyle("stroke", v);
+        return v;
+    }
+    
+    public get strokeDasharray(): String {
+        return getStyle("stroke-dasharray");
+    }
+
+    public set strokeDasharray(v: String): String {
+        setStyle("stroke-dasharray", v);
+        return v;
+    }
+    
+    public get strokeDashoffset(): String {
+        return getStyle("stroke-dashoffset");
+    }
+
+    public set strokeDashoffset(v: String): String {
+        setStyle("stroke-dashoffset", v);
+        return v;
+    }
+    
+    public get strokeLinecap(): String {
+        return getStyle("stroke-linecap");
+    }
+
+    public set strokeLinecap(v: String): String {
+        setStyle("stroke-linecap", v);
+        return v;
+    }
+    
+    public get strokeLinejoin(): String {
+        return getStyle("stroke-linejoin");
+    }
+
+    public set strokeLinejoin(v: String): String {
+        setStyle("stroke-linejoin", v);
+        return v;
+    }
+    
+    public get strokeMiterlimit(): String {
+        return getStyle("stroke-miterlimit");
+    }
+
+    public set strokeMiterlimit(v: String): String {
+        setStyle("stroke-miterlimit", v);
+        return v;
+    }
+    
+    public get strokeOpacity(): String {
+        return getStyle("stroke-opacity");
+    }
+
+    public set strokeOpacity(v: String): String {
+        setStyle("stroke-opacity", v);
+        return v;
+    }
+    
+    public get strokeWidth(): String {
+        return getStyle("stroke-width");
+    }
+
+    public set strokeWidth(v: String): String {
+        setStyle("stroke-width", v);
+        return v;
+    }
+    
+    public get tabSize(): String {
+        return getStyle("tab-size");
+    }
+
+    public set tabSize(v: String): String {
+        setStyle("tab-size", v);
+        return v;
+    }
+    
+    public get tableLayout(): String {
+        return getStyle("table-layout");
+    }
+
+    public set tableLayout(v: String): String {
+        setStyle("table-layout", v);
+        return v;
+    }
+    
+    public get textAlign(): String {
+        return getStyle("text-align");
+    }
+
+    public set textAlign(v: String): String {
+        setStyle("text-align", v);
+        return v;
+    }
+    
+    public get textAlignAll(): String {
+        return getStyle("text-align-all");
+    }
+
+    public set textAlignAll(v: String): String {
+        setStyle("text-align-all", v);
+        return v;
+    }
+    
+    public get textAlignLast(): String {
+        return getStyle("text-align-last");
+    }
+
+    public set textAlignLast(v: String): String {
+        setStyle("text-align-last", v);
+        return v;
+    }
+    
+    public get textAnchor(): String {
+        return getStyle("text-anchor");
+    }
+
+    public set textAnchor(v: String): String {
+        setStyle("text-anchor", v);
+        return v;
+    }
+    
+    public get textCombineUpright(): String {
+        return getStyle("text-combine-upright");
+    }
+
+    public set textCombineUpright(v: String): String {
+        setStyle("text-combine-upright", v);
+        return v;
+    }
+    
+    public get textDecoration(): String {
+        return getStyle("text-decoration");
+    }
+
+    public set textDecoration(v: String): String {
+        setStyle("text-decoration", v);
+        return v;
+    }
+    
+    public get textDecorationColor(): String {
+        return getStyle("text-decoration-color");
+    }
+
+    public set textDecorationColor(v: String): String {
+        setStyle("text-decoration-color", v);
+        return v;
+    }
+    
+    public get textDecorationLine(): String {
+        return getStyle("text-decoration-line");
+    }
+
+    public set textDecorationLine(v: String): String {
+        setStyle("text-decoration-line", v);
+        return v;
+    }
+    
+    public get textDecorationSkip(): String {
+        return getStyle("text-decoration-skip");
+    }
+
+    public set textDecorationSkip(v: String): String {
+        setStyle("text-decoration-skip", v);
+        return v;
+    }
+    
+    public get textDecorationStyle(): String {
+        return getStyle("text-decoration-style");
+    }
+
+    public set textDecorationStyle(v: String): String {
+        setStyle("text-decoration-style", v);
+        return v;
+    }
+    
+    public get textEmphasis(): String {
+        return getStyle("text-emphasis");
+    }
+
+    public set textEmphasis(v: String): String {
+        setStyle("text-emphasis", v);
+        return v;
+    }
+    
+    public get textEmphasisColor(): String {
+        return getStyle("text-emphasis-color");
+    }
+
+    public set textEmphasisColor(v: String): String {
+        setStyle("text-emphasis-color", v);
+        return v;
+    }
+    
+    public get textEmphasisPosition(): String {
+        return getStyle("text-emphasis-position");
+    }
+
+    public set textEmphasisPosition(v: String): String {
+        setStyle("text-emphasis-position", v);
+        return v;
+    }
+    
+    public get textEmphasisSkip(): String {
+        return getStyle("text-emphasis-skip");
+    }
+
+    public set textEmphasisSkip(v: String): String {
+        setStyle("text-emphasis-skip", v);
+        return v;
+    }
+    
+    public get textEmphasisStyle(): String {
+        return getStyle("text-emphasis-style");
+    }
+
+    public set textEmphasisStyle(v: String): String {
+        setStyle("text-emphasis-style", v);
+        return v;
+    }
+    
+    public get textHeight(): String {
+        return getStyle("text-height");
+    }
+
+    public set textHeight(v: String): String {
+        setStyle("text-height", v);
+        return v;
+    }
+    
+    public get textIndent(): String {
+        return getStyle("text-indent");
+    }
+
+    public set textIndent(v: String): String {
+        setStyle("text-indent", v);
+        return v;
+    }
+    
+    public get textJustify(): String {
+        return getStyle("text-justify");
+    }
+
+    public set textJustify(v: String): String {
+        setStyle("text-justify", v);
+        return v;
+    }
+    
+    public get textOrientation(): String {
+        return getStyle("text-orientation");
+    }
+
+    public set textOrientation(v: String): String {
+        setStyle("text-orientation", v);
+        return v;
+    }
+    
+    public get textOverflow(): String {
+        return getStyle("text-overflow");
+    }
+
+    public set textOverflow(v: String): String {
+        setStyle("text-overflow", v);
+        return v;
+    }
+    
+    public get textRendering(): String {
+        return getStyle("text-rendering");
+    }
+
+    public set textRendering(v: String): String {
+        setStyle("text-rendering", v);
+        return v;
+    }
+    
+    public get textShadow(): String {
+        return getStyle("text-shadow");
+    }
+
+    public set textShadow(v: String): String {
+        setStyle("text-shadow", v);
+        return v;
+    }
+    
+    public get textSizeAdjust(): String {
+        return getStyle("text-size-adjust");
+    }
+
+    public set textSizeAdjust(v: String): String {
+        setStyle("text-size-adjust", v);
+        return v;
+    }
+    
+    public get textSpaceCollapse(): String {
+        return getStyle("text-space-collapse");
+    }
+
+    public set textSpaceCollapse(v: String): String {
+        setStyle("text-space-collapse", v);
+        return v;
+    }
+    
+    public get textSpacing(): String {
+        return getStyle("text-spacing");
+    }
+
+    public set textSpacing(v: String): String {
+        setStyle("text-spacing", v);
+        return v;
+    }
+    
+    public get textTransform(): String {
+        return getStyle("text-transform");
+    }
+
+    public set textTransform(v: String): String {
+        setStyle("text-transform", v);
+        return v;
+    }
+    
+    public get textUnderlinePosition(): String {
+        return getStyle("text-underline-position");
+    }
+
+    public set textUnderlinePosition(v: String): String {
+        setStyle("text-underline-position", v);
+        return v;
+    }
+    
+    public get textWrap(): String {
+        return getStyle("text-wrap");
+    }
+
+    public set textWrap(v: String): String {
+        setStyle("text-wrap", v);
+        return v;
+    }
+    
+    public get top(): String {
+        return getStyle("top");
+    }
+
+    public set top(v: String): String {
+        setStyle("top", v);
+        return v;
+    }
+    
+    public get touchAction(): String {
+        return getStyle("touch-action");
+    }
+
+    public set touchAction(v: String): String {
+        setStyle("touch-action", v);
+        return v;
+    }
+    
+    public get transform(): String {
+        return getStyle("transform");
+    }
+
+    public set transform(v: String): String {
+        setStyle("transform", v);
+        return v;
+    }
+    
+    public get transformBox(): String {
+        return getStyle("transform-box");
+    }
+
+    public set transformBox(v: String): String {
+        setStyle("transform-box", v);
+        return v;
+    }
+    
+    public get transformOrigin(): String {
+        return getStyle("transform-origin");
+    }
+
+    public set transformOrigin(v: String): String {
+        setStyle("transform-origin", v);
+        return v;
+    }
+    
+    public get transformStyle(): String {
+        return getStyle("transform-style");
+    }
+
+    public set transformStyle(v: String): String {
+        setStyle("transform-style", v);
+        return v;
+    }
+    
+    public get transition(): String {
+        return getStyle("transition");
+    }
+
+    public set transition(v: String): String {
+        setStyle("transition", v);
+        return v;
+    }
+    
+    public get transitionDelay(): String {
+        return getStyle("transition-delay");
+    }
+
+    public set transitionDelay(v: String): String {
+        setStyle("transition-delay", v);
+        return v;
+    }
+    
+    public get transitionDuration(): String {
+        return getStyle("transition-duration");
+    }
+
+    public set transitionDuration(v: String): String {
+        setStyle("transition-duration", v);
+        return v;
+    }
+    
+    public get transitionProperty(): String {
+        return getStyle("transition-property");
+    }
+
+    public set transitionProperty(v: String): String {
+        setStyle("transition-property", v);
+        return v;
+    }
+    
+    public get transitionTimingFunction(): String {
+        return getStyle("transition-timing-function");
+    }
+
+    public set transitionTimingFunction(v: String): String {
+        setStyle("transition-timing-function", v);
+        return v;
+    }
+    
+    public get unicodeBidi(): String {
+        return getStyle("unicode-bidi");
+    }
+
+    public set unicodeBidi(v: String): String {
+        setStyle("unicode-bidi", v);
+        return v;
+    }
+    
+    public get vectorEffect(): String {
+        return getStyle("vector-effect");
+    }
+
+    public set vectorEffect(v: String): String {
+        setStyle("vector-effect", v);
+        return v;
+    }
+    
+    public get verticalAlign(): String {
+        return getStyle("vertical-align");
+    }
+
+    public set verticalAlign(v: String): String {
+        setStyle("vertical-align", v);
+        return v;
+    }
+    
+    public get visibility(): String {
+        return getStyle("visibility");
+    }
+
+    public set visibility(v: String): String {
+        setStyle("visibility", v);
+        return v;
+    }
+    
+    public get voiceBalance(): String {
+        return getStyle("voice-balance");
+    }
+
+    public set voiceBalance(v: String): String {
+        setStyle("voice-balance", v);
+        return v;
+    }
+    
+    public get voiceDuration(): String {
+        return getStyle("voice-duration");
+    }
+
+    public set voiceDuration(v: String): String {
+        setStyle("voice-duration", v);
+        return v;
+    }
+    
+    public get voiceFamily(): String {
+        return getStyle("voice-family");
+    }
+
+    public set voiceFamily(v: String): String {
+        setStyle("voice-family", v);
+        return v;
+    }
+    
+    public get voicePitch(): String {
+        return getStyle("voice-pitch");
+    }
+
+    public set voicePitch(v: String): String {
+        setStyle("voice-pitch", v);
+        return v;
+    }
+    
+    public get voiceRange(): String {
+        return getStyle("voice-range");
+    }
+
+    public set voiceRange(v: String): String {
+        setStyle("voice-range", v);
+        return v;
+    }
+    
+    public get voiceRate(): String {
+        return getStyle("voice-rate");
+    }
+
+    public set voiceRate(v: String): String {
+        setStyle("voice-rate", v);
+        return v;
+    }
+    
+    public get voiceStress(): String {
+        return getStyle("voice-stress");
+    }
+
+    public set voiceStress(v: String): String {
+        setStyle("voice-stress", v);
+        return v;
+    }
+    
+    public get voiceVolumn(): String {
+        return getStyle("voice-volumn");
+    }
+
+    public set voiceVolumn(v: String): String {
+        setStyle("voice-volumn", v);
+        return v;
+    }
+    
+    public get volume(): String {
+        return getStyle("volume");
+    }
+
+    public set volume(v: String): String {
+        setStyle("volume", v);
+        return v;
+    }
+    
+    public get whiteSpace(): String {
+        return getStyle("white-space");
+    }
+
+    public set whiteSpace(v: String): String {
+        setStyle("white-space", v);
+        return v;
+    }
+    
+    public get widows(): String {
+        return getStyle("widows");
+    }
+
+    public set widows(v: String): String {
+        setStyle("widows", v);
+        return v;
+    }
+    
+    public get width(): String {
+        return getStyle("width");
+    }
+
+    public set width(v: String): String {
+        setStyle("width", v);
+        return v;
+    }
+    
+    public get willChange(): String {
+        return getStyle("will-change");
+    }
+
+    public set willChange(v: String): String {
+        setStyle("will-change", v);
+        return v;
+    }
+    
+    public get wordBreak(): String {
+        return getStyle("word-break");
+    }
+
+    public set wordBreak(v: String): String {
+        setStyle("word-break", v);
+        return v;
+    }
+    
+    public get wordSpacing(): String {
+        return getStyle("word-spacing");
+    }
+
+    public set wordSpacing(v: String): String {
+        setStyle("word-spacing", v);
+        return v;
+    }
+    
+    public get wordWrap(): String {
+        return getStyle("word-wrap");
+    }
+
+    public set wordWrap(v: String): String {
+        setStyle("word-wrap", v);
+        return v;
+    }
+    
+    public get wrapFlow(): String {
+        return getStyle("wrap-flow");
+    }
+
+    public set wrapFlow(v: String): String {
+        setStyle("wrap-flow", v);
+        return v;
+    }
+    
+    public get wrapThrough(): String {
+        return getStyle("wrap-through");
+    }
+
+    public set wrapThrough(v: String): String {
+        setStyle("wrap-through", v);
+        return v;
+    }
+    
+    public get writingMode(): String {
+        return getStyle("writing-mode");
+    }
+
+    public set writingMode(v: String): String {
+        setStyle("writing-mode", v);
+        return v;
+    }
+    
+    public get zIndex(): String {
+        return getStyle("z-index");
+    }
+
+    public set zIndex(v: String): String {
+        setStyle("z-index", v);
+        return v;
+    }
+    
+    public get userSelect(): String {
+        return getStyle("user-select");
+    }
+
+    public set userSelect(v: String): String {
+        setStyle("user-select", v);
+        return v;
+    }
+    }
