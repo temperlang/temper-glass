@@ -9,4 +9,3 @@ box.impl = new class extends Loader {
 };
 
 ready();
-

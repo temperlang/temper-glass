@@ -20,7 +20,7 @@ let make(element: String): BaseElement {
 
 export let Block = fn(): Void;
 
-export class BaseElement {}
+class BaseElement {}
 
 export let with(element: BaseElement, block: Block): Void {
   self = element;
