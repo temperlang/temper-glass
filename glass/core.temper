@@ -3,6 +3,7 @@ let {...} = import("../internal/js.temper");
 
 let stack = new ListBuilder<BaseElement>();
 
+let vElementPath = new Typed<BaseElement, String>("const path = []; while (arg.parentNode != null) { let k = {}; for (const ch of arg.parentNode.children) { const exist = k[ch.nodeName] ?? 0; if (ch === arg) { path.unshift(ch.nodeName + '#' + exist); } k[ch.nodeName] = exist + 1; } arg = arg.parentNode; } return path.join('.');");
 let vMake = new Typed<String, BaseElement>("return document.createElement(arg);");
 let vBody = new Typed<Null, BaseElement>("return document.body;");
 let vHtml = new Typed<Null, BaseElement>("return document.body.parentElement;");
@@ -12,23 +13,38 @@ let vElementGetStyle = new Typed<Listed<BaseElement | String>, String>("return a
 let vElementSetStyle = new Typed<Listed<BaseElement | String>, Null>("arg[0].style[arg[1]] = arg[2];");
 let vElementOn = new Typed<Listed<BaseElement | String | Block>, Null>("arg[0].addEventListener(arg[1], arg[2]);");
 let vElementRemove = new Typed<BaseElement, Null>("arg.remove();");
-var self: BaseElement;
 
 let make(element: String): BaseElement {
   return vMake.call(element);
 }
 
+export var self: BaseElement;
+
+export let getPath(element: BaseElement): String {
+  return vElementPath.call(element);
+}
+
 export let Block = fn(): Void;
 
-class BaseElement {}
+export class BaseElement {}
 
-export let with(element: BaseElement, block: Block): Void {
+export let with(element: BaseElement, block: fn(): Void | Bubble): Void {
   self = element;
   stack.add(element);
-  let ret = block();
+  let res = do {
+    block();
+    false
+  } orelse do {
+    console.log("error: ${getPath(element)}")
+    true
+  };
+  let res = false;
   stack.removeLast();
   if (!stack.isEmpty) {
     self = stack[stack.length-1];
+  }
+  if (res) {
+    bubble();
   }
 }
 

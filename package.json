@@ -2,17 +2,10 @@
   "name": "temper-html",
   "version": "1.0.0",
   "dependencies": {
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@temperlang/core": "file:temper.out/js/temper-core",
-    "concurrently": "^8.2.2",
-    "rollup": "^4.20.0",
-    "rollup-plugin-auto-reload": "^1.0.3"
+    "rollup": "^4.20.0"
   },
   "scripts": {
-    "start": "npx concurrently 'npm run rollup' 'npm run server' 'npm run temper'",
-    "rollup": "npx rollup -w -c rollup.config.js",
-    "server": "python3 -m http.server -d out",
-    "temper": "temper watch -b js"
+    "start": "node start.js"
   },
   "type": "module"
 }

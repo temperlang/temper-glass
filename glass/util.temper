@@ -1,6 +1,16 @@
 
 let {...} = import("./core.temper");
-let {...} = import("./style.temper");
+
+class WrapStyle {
+  public set(name: String, value: String): String {
+    setStyle(name, value);
+    return value;
+  }
+
+  public get(name: String): String {
+    return getStyle(name);
+  }
+}
 
 export let style = new WrapStyle();
 

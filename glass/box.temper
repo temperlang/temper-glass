@@ -1,0 +1,39 @@
+
+let {...} = import("../internal/js.temper");
+let {...} = import("./core.temper");
+
+let vExport = new Typed<Pair<String, String>, Null>("localStorage.setItem(arg.key, arg.value);");
+let vImport = new Typed<String, String>("return localStorage.getItem(arg) ?? '';");
+
+export interface Boxxed {
+  public path: String;
+}
+
+export class BooleanBox extends Boxxed {
+  public path: String;
+  public data: Boolean;
+
+  public constructor(v: Boolean): Void {
+    path = getPath(self);
+    let got = vImport.call(path);
+    if (got == "") {
+      store(v);
+    } else if (got == "true") {
+      store(true);
+    } else if (got == "false") {
+      store(false);
+    } else {
+      store(v);
+      // bubble();
+    }
+  }
+
+  public store(v: Boolean): Void {
+    data = v;
+    vExport.call(new Pair(path, v.toString()));
+  }
+
+  public load(): Boolean {
+    return data;
+  }
+}
